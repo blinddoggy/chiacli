@@ -1,0 +1,71 @@
+2024-07-01 05:16:04,338 - INFO - Ejecutando comando: chia data create_data_store -m 0.00001
+2024-07-01 05:16:07,533 - INFO - {
+2024-07-01 05:16:07,533 - INFO - "id": "26fb8b7dfb4d067c4de3cece11a83a992992413e6911177e0fd52840518e5ac5",
+2024-07-01 05:16:07,533 - INFO - "success": true
+2024-07-01 05:16:07,533 - INFO - }
+2024-07-01 05:16:07,627 - INFO - Comando ejecutado exitosamente.
+2024-07-01 05:18:01,218 - INFO - Ejecutando comando: chia data create_data_store -m 0.00001
+2024-07-01 05:18:04,302 - INFO - {
+2024-07-01 05:18:04,302 - INFO - "id": "0331fd95626024def680af62130db52d2f22b8c080bc76403355e08b6d55dadf",
+2024-07-01 05:18:04,302 - INFO - "success": true
+2024-07-01 05:18:04,302 - INFO - }
+2024-07-01 05:18:04,351 - INFO - Comando ejecutado exitosamente.
+2024-07-01 05:19:54,614 - INFO - Inicio de la ejecución del comando
+2024-07-01 05:19:54,614 - INFO - Ejecutando comando: chia data create_data_store -m 0.00001
+2024-07-01 05:19:57,698 - INFO - {
+2024-07-01 05:19:57,699 - INFO - "id": "5e1670617b896a47ba247958ed5e84643a5fa94a2a3f48b04437eeee7a3f879f",
+2024-07-01 05:19:57,699 - INFO - "success": true
+2024-07-01 05:19:57,699 - INFO - }
+2024-07-01 05:19:57,748 - INFO - Comando ejecutado exitosamente.
+2024-07-01 05:21:56,745 - INFO - Inicio de la ejecución del comando
+2024-07-01 05:21:56,745 - INFO - Ejecutando comando: chia data create_data_store -m 0.00001
+2024-07-01 05:21:59,935 - INFO - {
+2024-07-01 05:21:59,936 - INFO - "id": "a8de4e596c25fab3bc55b8cb3807807b8a9f7e8c0d6a1de00a29aa9185be62e8",
+2024-07-01 05:21:59,936 - INFO - "success": true
+2024-07-01 05:21:59,936 - INFO - }
+2024-07-01 05:22:00,005 - INFO - Comando ejecutado exitosamente.
+2024-07-01 05:42:06,227 - INFO - Inicio de la ejecución del comando
+2024-07-01 05:42:06,227 - INFO - Ejecutando comando: chia data create_data_store -m 0.00001
+2024-07-01 05:42:09,290 - INFO - {
+2024-07-01 05:42:09,290 - INFO - "id": "2d227120b20d93a0882b4db46043277fd607e21821179948f7ecdfc43185d222",
+2024-07-01 05:42:09,290 - INFO - "success": true
+2024-07-01 05:42:09,290 - INFO - }
+2024-07-01 05:42:09,340 - INFO - Comando ejecutado exitosamente.
+2024-07-01 06:17:42,602 - INFO - Inicio de la ejecución del comando
+2024-07-01 06:17:42,602 - INFO - Descripción: Creación de la base de datos en Chia
+2024-07-01 06:17:42,602 - INFO - Ejecutando comando: chia data create_data_store -m 0.00001
+2024-07-01 06:17:45,727 - INFO - {
+2024-07-01 06:17:45,727 - INFO - "id": "dbedf4d3933428908cbd14d2c718222d044183a4b83cae43ea179f31a9b194e8",
+2024-07-01 06:17:45,727 - INFO - "success": true
+2024-07-01 06:17:45,727 - INFO - }
+2024-07-01 06:17:45,780 - INFO - Comando ejecutado exitosamente.
+2024-07-01 06:17:45,780 - INFO - ID de la base de datos creada: dbedf4d3933428908cbd14d2c718222d044183a4b83cae43ea179f31a9b194e8
+2024-07-01 06:17:50,784 - INFO - Inicio de la ejecución del comando
+2024-07-01 06:17:50,784 - INFO - Descripción: Inserción de datos en la base de datos en Chia
+2024-07-01 06:17:50,785 - INFO - Ejecutando comando: chia rpc data_layer batch_update '{"id":"dbedf4d3933428908cbd14d2c718222d044183a4b83cae43ea179f31a9b194e8", "changelist":[{"action":"insert", "key":"0003", "value":"abc1"}]}'
+2024-07-01 06:17:53,840 - ERROR - Error: Request failed: RPC response failure: {"error": "Already have a pending root waiting for confirmation.", "success": false, "traceback": "Traceback (most recent call last):\n  File \"/home/m/.local/lib/python3.10/site-packages/chia/rpc/util.py\", line 49, in inner\n    res_object = await f(request_data)\n  File \"/home/m/.local/lib/python3.10/site-packages/chia/rpc/data_layer_rpc_api.py\", line 247, in batch_update\n    transaction_record = await self.service.batch_update(store_id, changelist, uint64(fee), submit_on_chain)\n  File \"/home/m/.local/lib/python3.10/site-packages/chia/data_layer/data_layer.py\", line 260, in batch_update\n    await self.batch_insert(tree_id=tree_id, changelist=changelist, status=status)\n  File \"/home/m/.local/lib/python3.10/site-packages/chia/data_layer/data_layer.py\", line 295, in batch_insert\n    raise Exception(\"Already have a pending root waiting for confirmation.\")\nException: Already have a pending root waiting for confirmation.\n"}
+2024-07-01 06:17:53,840 - ERROR - El comando finalizó con el código de salida: 1
+2024-07-01 06:17:58,843 - INFO - Inicio de la ejecución del comando
+2024-07-01 06:17:58,843 - INFO - Descripción: Consulta de datos en la base de datos en Chia
+2024-07-01 06:17:58,843 - INFO - Ejecutando comando: chia rpc data_layer get_keys_values '{"id":"dbedf4d3933428908cbd14d2c718222d044183a4b83cae43ea179f31a9b194e8"}'
+2024-07-01 06:18:01,942 - ERROR - Error: Request failed: RPC response failure: {"error": "No generations found for tree ID: dbedf4d3933428908cbd14d2c718222d044183a4b83cae43ea179f31a9b194e8", "success": false, "traceback": "Traceback (most recent call last):\n  File \"/home/m/.local/lib/python3.10/site-packages/chia/rpc/util.py\", line 49, in inner\n    res_object = await f(request_data)\n  File \"/home/m/.local/lib/python3.10/site-packages/chia/rpc/data_layer_rpc_api.py\", line 203, in get_keys_values\n    keys_values = await self.service.get_keys_values(store_id, root_hash)\n  File \"/home/m/.local/lib/python3.10/site-packages/chia/data_layer/data_layer.py\", line 359, in get_keys_values\n    res = await self.data_store.get_keys_values(store_id, root_hash)\n  File \"/home/m/.local/lib/python3.10/site-packages/chia/data_layer/data_store.py\", line 769, in get_keys_values\n    root = await self.get_tree_root(tree_id=tree_id)\n  File \"/home/m/.local/lib/python3.10/site-packages/chia/data_layer/data_store.py\", line 579, in get_tree_root\n    generation = await self.get_tree_generation(tree_id=tree_id)\n  File \"/home/m/.local/lib/python3.10/site-packages/chia/data_layer/data_store.py\", line 574, in get_tree_generation\n    raise Exception(f\"No generations found for tree ID: {tree_id.hex()}\")\nException: No generations found for tree ID: dbedf4d3933428908cbd14d2c718222d044183a4b83cae43ea179f31a9b194e8\n"}
+2024-07-01 06:18:01,942 - ERROR - El comando finalizó con el código de salida: 1
+2024-07-01 06:28:56,611 - INFO - Inicio de la ejecución del comando
+2024-07-01 06:28:56,611 - INFO - Descripción: Creación de la base de datos en Chia
+2024-07-01 06:28:56,611 - INFO - Ejecutando comando: chia data create_data_store -m 0.00001
+2024-07-01 06:29:02,220 - INFO - {
+2024-07-01 06:29:02,221 - INFO - "id": "2ec295f71612e3f960b78b2920b3cbfdacdddf8733f11f0bf343bc96168194c1",
+2024-07-01 06:29:02,221 - INFO - "success": true
+2024-07-01 06:29:02,221 - INFO - }
+2024-07-01 06:29:02,271 - INFO - Comando ejecutado exitosamente.
+2024-07-01 06:29:02,271 - INFO - ID de la base de datos creada: 2ec295f71612e3f960b78b2920b3cbfdacdddf8733f11f0bf343bc96168194c1
+2024-07-01 06:29:12,279 - INFO - Inicio de la ejecución del comando
+2024-07-01 06:29:12,279 - INFO - Descripción: Inserción de datos en la base de datos en Chia
+2024-07-01 06:29:12,279 - INFO - Ejecutando comando: chia rpc data_layer batch_update '{"id":"2ec295f71612e3f960b78b2920b3cbfdacdddf8733f11f0bf343bc96168194c1", "changelist":[{"action":"insert", "key":"0003", "value":"abc1"}]}'
+2024-07-01 06:29:18,134 - ERROR - Error: Request failed: RPC response failure: {"error": "Already have a pending root waiting for confirmation.", "success": false, "traceback": "Traceback (most recent call last):\n  File \"/home/m/.local/lib/python3.10/site-packages/chia/rpc/util.py\", line 49, in inner\n    res_object = await f(request_data)\n  File \"/home/m/.local/lib/python3.10/site-packages/chia/rpc/data_layer_rpc_api.py\", line 247, in batch_update\n    transaction_record = await self.service.batch_update(store_id, changelist, uint64(fee), submit_on_chain)\n  File \"/home/m/.local/lib/python3.10/site-packages/chia/data_layer/data_layer.py\", line 260, in batch_update\n    await self.batch_insert(tree_id=tree_id, changelist=changelist, status=status)\n  File \"/home/m/.local/lib/python3.10/site-packages/chia/data_layer/data_layer.py\", line 295, in batch_insert\n    raise Exception(\"Already have a pending root waiting for confirmation.\")\nException: Already have a pending root waiting for confirmation.\n"}
+2024-07-01 06:29:18,134 - ERROR - El comando finalizó con el código de salida: 1
+2024-07-01 06:29:28,145 - INFO - Inicio de la ejecución del comando
+2024-07-01 06:29:28,145 - INFO - Descripción: Consulta de datos en la base de datos en Chia
+2024-07-01 06:29:28,146 - INFO - Ejecutando comando: chia rpc data_layer get_keys_values '{"id":"2ec295f71612e3f960b78b2920b3cbfdacdddf8733f11f0bf343bc96168194c1"}'
+2024-07-01 06:29:33,839 - ERROR - Error: Request failed: RPC response failure: {"error": "No generations found for tree ID: 2ec295f71612e3f960b78b2920b3cbfdacdddf8733f11f0bf343bc96168194c1", "success": false, "traceback": "Traceback (most recent call last):\n  File \"/home/m/.local/lib/python3.10/site-packages/chia/rpc/util.py\", line 49, in inner\n    res_object = await f(request_data)\n  File \"/home/m/.local/lib/python3.10/site-packages/chia/rpc/data_layer_rpc_api.py\", line 203, in get_keys_values\n    keys_values = await self.service.get_keys_values(store_id, root_hash)\n  File \"/home/m/.local/lib/python3.10/site-packages/chia/data_layer/data_layer.py\", line 359, in get_keys_values\n    res = await self.data_store.get_keys_values(store_id, root_hash)\n  File \"/home/m/.local/lib/python3.10/site-packages/chia/data_layer/data_store.py\", line 769, in get_keys_values\n    root = await self.get_tree_root(tree_id=tree_id)\n  File \"/home/m/.local/lib/python3.10/site-packages/chia/data_layer/data_store.py\", line 579, in get_tree_root\n    generation = await self.get_tree_generation(tree_id=tree_id)\n  File \"/home/m/.local/lib/python3.10/site-packages/chia/data_layer/data_store.py\", line 574, in get_tree_generation\n    raise Exception(f\"No generations found for tree ID: {tree_id.hex()}\")\nException: No generations found for tree ID: 2ec295f71612e3f960b78b2920b3cbfdacdddf8733f11f0bf343bc96168194c1\n"}
+2024-07-01 06:29:33,839 - ERROR - El comando finalizó con el código de salida: 1
